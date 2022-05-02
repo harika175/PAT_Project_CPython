@@ -7,6 +7,7 @@ Narlakanti, Dinesh Kumar - 2083649
 Three major Folders are :\
 CSV Files - contains all the datasets\
 Plots - contains all the images\
-Python Files - contains all the python scripts\
+Python Files - contains all the python scripts  
+
 
 
