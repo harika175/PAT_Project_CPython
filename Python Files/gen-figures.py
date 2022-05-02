@@ -5,7 +5,7 @@ import numpy as np
 
 ## Question - 2 plots
 
-dataset2 = pd.read_csv('count_assert_2_final.csv')
+dataset2 = pd.read_csv('CSV Files/count_assert_2_final.csv')
 
 sort_dataset2 = dataset2.sort_values(by='Count')
 
@@ -47,7 +47,7 @@ plt.savefig('plot2_1_line.png',bbox_inches='tight')
 
 #question -2 Total files
 
-dataset2_2 = pd.read_csv('count_total_2_final.csv')
+dataset2_2 = pd.read_csv('CSV Files/count_total_2_final.csv')
 #print(dataset2_2)
 plt.figure(figsize=(16, 8), dpi=150)
 
@@ -79,7 +79,7 @@ plt.savefig('plot2_total.png',bbox_inches='tight')
 
 ###############
 
-dataset3_1 = pd.read_csv('count_3_assert.csv')
+dataset3_1 = pd.read_csv('CSV Files/count_3_assert.csv')
 
 sort_dataset3_1 = dataset3_1
 sort_dataset3_1.drop(sort_dataset3_1.index[sort_dataset3_1['Count'] == 0], inplace=True)
@@ -101,7 +101,7 @@ plt.savefig('plot3_assert_bar.png',bbox_inches='tight')
 
 # question -3 debug
 
-dataset3_2 = pd.read_csv('count_3_debug.csv')
+dataset3_2 = pd.read_csv('CSV Files/count_3_debug.csv')
 
 #sort_dataset3_2 = dataset3_2
 sort_dataset3_2 = dataset3_2.sort_values(by='Count')
@@ -134,7 +134,7 @@ plt.savefig('plot3_debug_bar.png',bbox_inches='tight')
 
 ## Question - 4 Plots
 
-dataset4 = pd.read_csv('files_cpython.csv')
+dataset4 = pd.read_csv('CSV Files/files_cpython.csv')
  
 dataset4['year_add'] = pd.DatetimeIndex(dataset4['DateWhenFileIsAddedToTheProject']).year
  
@@ -159,7 +159,7 @@ plt.savefig('plot4_1.png',bbox_inches='tight')
 
 
 
-data = pd.read_csv('files_cpython_woauthornames.csv',  header=None)
+data = pd.read_csv('CSV Files/files_cpython_woauthornames.csv',  header=None)
 
 file_added_date_number_of_modifications = {}
 data = data[1:]
